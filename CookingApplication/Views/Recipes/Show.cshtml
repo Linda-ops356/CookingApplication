@@ -1,0 +1,12 @@
+﻿@model Recipe//den här vyn tar emot ett recept
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>@Model.Name</h1>
+<p>@Model.Ingredient</p>
+<p>@Model.Description</p>
+
+<p><a href ="/Recipes/Edit/@Model.Id">Edit recipe</a></p>

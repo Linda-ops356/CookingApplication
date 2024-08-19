@@ -1,0 +1,15 @@
+﻿@model Recipe//vår vy ska ta emot en model av typen Recipe
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form action="/Recipes/Edit/@Model.Id" method="post">
+    <input type="text" name="Name" placeholder="Name" value="@Model.Name"/>
+    <input type="text" name="Ingredient" placeholder="Ingredient" value="@Model.Ingredient"/>
+    <textarea name="Comment" placeholder="Comment">@Model.Description</textarea>
+
+    <button>Save</button>
+
+</form>
